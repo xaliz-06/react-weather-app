@@ -1,12 +1,12 @@
 import { DateTime } from "luxon";
 
 const API_KEY = "0c2e8162718ccfdc47df1b6c16b16685";
-const BASE_URL = "http://api.openweathermap.org/data/2.5";
+const BASE_URL = "https://api.openweathermap.org/data/2.5";
 
 const API_KEY_AW = "IivRnKHhxmIDcMtu87GGwFFQ5XVPADKI";
 const BASE_URL_AW =
   "https://dataservice.accuweather.com/locations/v1/cities/search";
-const BASE_URL_AW_FORECAST = "http://dataservice.accuweather.com/forecasts/v1";
+const BASE_URL_AW_FORECAST = "https://dataservice.accuweather.com/forecasts/v1";
 
 const getOPWeatherData = (infoType, searchParams) => {
   const url = new URL(BASE_URL + "/" + infoType);
