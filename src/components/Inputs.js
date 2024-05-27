@@ -1,16 +1,14 @@
 import React from "react";
 import { UilSearch, UilLocationPoint } from "@iconscout/react-unicons";
-import { useState, useRef } from "react";
-
-const Inputs = ({setQuery, unit, setUnit}) => {
+import { useRef } from "react";
+const Inputs = ({ setQuery, unit }) => {
   // const [city, setCity] = useState("");
 
-  const cityRef = useRef('')
+  const cityRef = useRef("");
 
   const submitHandler = () => {
-    if (cityRef.current.value !== '') setQuery({q: cityRef.current.value})
-  }
-
+    if (cityRef.current.value !== "") setQuery({ q: cityRef.current.value });
+  };
 
   return (
     <div className="flex flex-row justify-center my-5">
